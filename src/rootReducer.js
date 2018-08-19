@@ -7,6 +7,8 @@ const appReducer = combineReducers({
 });
 
 export default (state, action) => {
-  const nextState = { ...state };
+  const nextState = {
+    ...state,
+  };
   return appReducer(nextState, action);
 };
